@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau sans Rowspan ni Colspan</title>
+    <!-- <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: lightgray;
+        }
+    </style> -->
+</head>
+<body>
+    <h1 style="text-align: center;">Tableau sans Rowspan ni Colspan</h1>
+    <p  style="text-align: center; font-weight: 900;">cellspacing="10" cellpadding="15"</p>
+
+    <table border="1" cellspacing="10" cellpadding="15" style="margin-left: 30%;margin-right: 30%;">
+        <thead>
+            <tr>
+                <th>Produit</th>
+                <th>Type</th>
+                <th>Prix (en €)</th>
+                <th>Disponibilité</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ordinateur</td>
+                <td>Standard</td>
+                <td>800</td>
+                <td>En stock</td>
+            </tr>
+            <tr>
+                <td>Ordinateur</td>
+                <td>Gamer</td>
+                <td>1500</td>
+                <td>Sur commande</td>
+            </tr>
+            <tr>
+                <td>Smartphone</td>
+                <td>De 300 à 1000</td>
+                <td>-</td>
+                <td>En stock</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

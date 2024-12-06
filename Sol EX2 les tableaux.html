@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple Colspan et Rowspan</title>
+    <!-- <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: lightgray;
+        }
+    </style> -->
+    <!-- commantaire -->
+</head>
+<body>
+    <h1 style="text-align: center;">Exemple d'utilisation de Colspan et Rowspan</h1>
+
+    <table border="1" cellspacing="10" cellpadding="15" style="margin-left: 10%;margin-right: 10%;">
+        <!-- Start les titres du tableau -->
+        <thead>
+            <tr>
+                <th>Produit</th>
+                <th colspan="2">Prix (en €)</th>
+                <th>Disponibilité</th>
+            </tr>
+        </thead>
+        <!-- End les titres du tableau -->
+        <tbody>
+            <tr>
+                <td rowspan="2">Ordinateur</td>
+                <td>Standard</td>
+                <td>800</td>
+                <td>En stock</td>
+            </tr>
+            <tr>
+                <td>Gamer</td>
+                <td>1500</td>
+                <td>Sur commande</td>
+            </tr>
+            <tr>
+                <td>Smartphone</td>
+                <td colspan="2">De 300 à 1000</td>
+                <td>En stock</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

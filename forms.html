@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Exemple</title>
+</head>
+<body>
+    <h1>Formulaire Exemple</h1>
+    <form action="#" method="GET">
+        <!-- Champ Texte -->
+        <label for="texte">Nom :</label>
+        <input type="text" id="texte" name="nom" required>
+        <br><br>
+
+        <!-- Champ Numéro -->
+        <label for="nombre">Âge :</label>
+        <input type="number" id="nombre" name="age" min="0" required>
+        <br><br>
+
+        <!-- Champ Email -->
+        <label for="email">Adresse Email :</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Champ Zone de Texte -->
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" cols="30"></textarea>
+        <br><br>
+
+        <!-- Champ Sélection -->
+        <label for="choix">Choisissez une option :</label>
+        <select id="choix" name="choix">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+        <br><br>
+
+        <!-- Boutons Radio -->
+        <p>Genre :</p>
+        <input type="radio" id="homme" name="genre" value="homme">
+        <label for="homme">Homme</label>
+        <br>
+        <input type="radio" id="femme" name="genre" value="femme">
+        <label for="femme">Femme</label>
+        <br>
+        <input type="radio" id="autre" name="genre" value="autre">
+        <label for="autre">Autre</label>
+        <br><br>
+        <!-- Boutons Radio -->
+        <p>Ville :</p>
+        <input type="checkbox" id="Dakhla" name="ville" value="Dakhla">
+        <label for="Dakhla">Dakhla</label>
+        <br>
+        <input type="checkbox" id="Laayoune" name="ville" value="Laayoune">
+        <label for="Laayoune">Laayoune</label>
+        <br>
+        <input type="checkbox" id="Tan-tan" name="ville" value="Tan-tan">
+        <label for="Tan-tan">Tan-tan</label>
+        <br><br>
+        <!-- Champ Range -->
+        <label for="vol">Volume (between 0 and 50) :</label>
+        <input type="range" id="vol" name="vol" min="0" max="50">
+        <br><br>
+
+        <!-- Champ Date -->
+        <label for="date">Date de naissance :</label>
+        <input type="date" id="date" name="date_naissance" required>
+        <br><br>
+
+        <!-- Champ Caché -->
+        <input type="hidden" name="token" value="12345ABC">
+
+        <!-- Bouton Envoyer -->
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>

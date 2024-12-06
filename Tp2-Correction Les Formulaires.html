@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP Les Formulaires</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <!-- Champ Texte -->
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+        <br><br>
+    
+        <!-- Champ Nombre -->
+        <label for="age">Âge :</label>
+        <input type="number" id="age" name="age" min="0" required>
+        <br><br>
+    
+        <!-- Champ Email -->
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+    
+        <!-- Champ Mot de passe -->
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+    
+        <!-- Zone de Texte -->
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" cols="30"></textarea>
+        <br><br>
+    
+        <!-- Boutons Radio -->
+        <p>Genre :</p>
+        <input type="radio" id="homme" name="genre" value="homme">
+        <label for="homme">Homme</label>
+        <br>
+        <input type="radio" id="femme" name="genre" value="femme">
+        <label for="femme">Femme</label>
+        <br><br>
+    
+        <!-- Cases à Cocher -->
+        <p>Intérêts :</p>
+        <input type="checkbox" id="sport" name="interets" value="sport">
+        <label for="sport">Sport</label>
+        <br>
+        <input type="checkbox" id="musique" name="interets" value="musique">
+        <label for="musique">Musique</label>
+        <br><br>
+    
+        <!-- Champ Date -->
+        <label for="date">Date de naissance :</label>
+        <input type="date" id="date" name="date_naissance" required>
+        <br><br>
+    
+        <!-- Bouton Soumettre -->
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>

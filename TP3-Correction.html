@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP3</title>
+</head>
+<body>
+    <!-- Header et Menu de Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#section1">Profil</a></li>
+                <li><a href="#section2">Tableau</a></li>
+                <li><a href="#section3">Formulaire</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Section 1 : Titre et Paragraphe -->
+    <section id="section1">
+        <h1>"Votre Nom et prenom"</h1>
+        <p>Ingénieur génie logiciel , développeur full stack ,intégrateur web et référenceur SEO</p>
+    </section>
+
+    <!-- Section 2 : Titre et Tableau -->
+    <section id="section2">
+        <h2>Tableau des informations</h2>
+        <table border="1" cellpadding="10">
+            <thead>
+                <!-- Ligne d'en-tête fusionnée -->
+                <tr>
+                    <th colspan="4">Informations des Utilisateurs</th>
+                </tr>
+                <tr>
+                    <th>Nom</th>
+                    <th colspan="2">Contact</th>
+                    <th>Adresse</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Lignes de contenu -->
+                <tr>
+                    <td>Jean Dupont</td>
+                    <td>Email : jean.dupont@email.com</td>
+                    <td>Téléphone : 06 12 34 56 78</td>
+                    <td rowspan="2">12, rue des Lilas, Paris</td>
+                </tr>
+                <tr>
+                    <td>Marie Curie</td>
+                    <td>Email : marie.curie@email.com</td>
+                    <td>Téléphone : 06 87 65 43 21</td>
+                </tr>
+                <tr>
+                    <td>Albert Nobel</td>
+                    <td>Email : albert.nobel@email.com</td>
+                    <td>Téléphone : 06 98 76 54 32</td>
+                    <td>78, boulevard Haussmann, Paris</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Section 3 : Titre et Formulaire -->
+    <section id="section3">
+        <h2>Formulaire d'inscription</h2>
+        <form action="#" method="post">
+            <!-- Nom et prénom -->
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required><br><br>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required><br><br>
+
+            <!-- Âge -->
+            <label for="age">Âge :</label>
+            <input type="number" id="age" name="age" min="1" max="120" required><br><br>
+
+            <!-- Email -->
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Téléphone -->
+            <label for="tel">Téléphone :</label>
+            <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" required placeholder="0606060606"><br><br>
+
+            <!-- Message -->
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+            <!-- Mot de passe -->
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <!-- Liste déroulante -->
+            <label for="rôle">rôle  :</label>
+            <select id="rôle" name="role">
+                <option value="etudiant">Étudiant</option>
+                <option value="enseignant">Enseignant</option>
+                <option value="autre">Autre</option>
+            </select><br><br>
+
+            <!-- Cases à cocher -->
+            <label>Centres d'intérêt :</label>
+            <input type="checkbox" id="sport" name="interet" value="sport">
+            <label for="sport">Sport</label><br>
+            <input type="checkbox" id="musique" name="interet" value="musique">
+            <label for="musique">Musique</label><br>
+            <input type="checkbox" id="lecture" name="interet" value="lecture">
+            <label for="lecture">Lecture</label>
+            <br>
+
+            <!-- Boutons radios -->
+            <label>Sexe :</label>
+            <input type="radio" id="homme" name="sexe" value="homme" required>
+            <label for="homme">Homme</label><br>
+            <input type="radio" id="femme" name="sexe" value="femme" required>
+            <label for="femme">Femme</label><br>
+
+            <!-- Bouton soumettre -->
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Page créée par "Votre Nom et Prenom"- 2024</p>
+    </footer>
+</body>
+</html>

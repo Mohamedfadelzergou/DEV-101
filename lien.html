@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple de liens</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemple d'attributs pour les liens</h1>
+    <!-- Lien avec href et title -->
+    <p>
+        <a href="#table" title="glisser au Tableau">
+            passe to table
+        </a>
+    </p>
+
+    <!-- Lien avec href et title -->
+    <p>
+        <a href="https://www.google.com" title="Visitez Google pour effectuer une recherche">
+            Lien vers Google (info-bulle affichée au survol)
+        </a>
+    </p>
+
+    <!-- Lien avec target="_blank" -->
+    <p>
+        <a href="https://www.wikipedia.org" target="_blank" title="Ouvrir Wikipédia dans un nouvel onglet">
+            Wikipédia (s'ouvre dans un nouvel onglet)
+        </a>
+    </p>
+
+    <!-- Lien avec target="_self" -->
+    <p>
+        <a href="exercice.html" target="_self" title="Ouvrir dans le même onglet">
+            Ouvrir dans le même onglet (par défaut)
+        </a>
+    </p>
+
+    <!-- Lien avec target="_parent" -->
+    <p>
+        <a href="exercice.html" target="_parent" title="Ouvrir dans le cadre parent">
+            Ouvrir dans le cadre parent (si applicable)
+        </a>
+    </p>
+    <!-- Lien avec href et title -->
+    <p>
+        <a href="https://www.google.com" title="Visitez Google pour effectuer une recherche">
+            Lien vers Google (info-bulle affichée au survol)
+        </a>
+    </p>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Produit</th>
+                <th colspan="2">Prix (en €)</th>
+                <th>Disponibilité</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Ordinateur</td>
+                <td>Standard</td>
+                <td>800</td>
+                <td>En stock</td>
+            </tr>
+            <tr>
+                <td>Gamer</td>
+                <td>1500</td>
+                <td>Sur commande</td>
+            </tr>
+            <tr>
+                <td>Smartphone</td>
+                <td colspan="2">De 300 à 1000</td>
+                <td>En stock</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>lient to mail</h1>
+    <a href="mailto:text@ofppt.ma">text@ofppt.ma</a>
+    <h1>lient to Tel</h1>
+    <a href="tel:+212000000000">0000000000000000</a>
+</body>
+</html>

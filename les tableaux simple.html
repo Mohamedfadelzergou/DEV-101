@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau sans Rowspan ni Colspan</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h1>Tableau sans Rowspan ni Colspan</h1>
+    <p>cellspacing="10" cellpadding="15"</p>
+    <ul>
+        <li>
+            <div>Élément 1</div>
+            <ul>
+                <li>Sous-élément A</li>
+                <li>Sous-élément B</li>
+            </ul>
+        </li>
+        <li>
+            <div>Élément 2</div>
+            <ul>
+                <li>Sous-élément A</li>
+                <li>Sous-élément B</li>
+            </ul>
+        </li>
+    </ul>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Produit</th>
+                <th>Type</th>
+                <th>Prix (en €)</th>
+                <th>Disponibilité</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="Td1">Ordinateur</td>
+                <td class="Td1">Standard</td>
+                <td class="Td1">800</td>
+                <td class="Td1">En stock</td>
+            </tr>
+            <tr>
+                <td>Ordinateur</td>
+                <td id="gamer">Gamer</td>
+                <td>1500</td>
+                <td>Sur commande</td>
+            </tr>
+            <tr class="Tr1">
+                <td>Smartphone</td>
+                <td>De 300 à 1000</td>
+                <td>-</td>
+                <td>En stock</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
